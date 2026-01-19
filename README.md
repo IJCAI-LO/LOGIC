@@ -6,7 +6,7 @@ Consistency"
 ![](./pic/model.png)
 
 <p align="center">
-    <img src="pic/model.png" alt="study" width="70%">
+    <img src="model.png" alt="study" width="70%">
     <br>
     <em>One-shot anomaly segmentation results.</em>
 </p>
