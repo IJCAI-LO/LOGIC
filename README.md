@@ -5,7 +5,11 @@ Consistency"
 
 ![](./pic/model.png)
 
-
+<p align="center">
+    <img src="pic/model.png" alt="study" width="70%">
+    <br>
+    <em>One-shot anomaly segmentation results.</em>
+</p>
 please check you dataset dir is like below:
 ```
 ├── Br35H
