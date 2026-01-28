@@ -52,13 +52,15 @@ data_dir/
 │   │   └── Train
 │   │       └── Label
 │   ├── ...
-├── DTD-Synthetic
-│   ├── Blotchy_099
+├── MPDD
+│   ├── blacket_black
 │   │   ├── ground_truth
-│   │   │   └── bad
+│   │   │   └── hole
+│   │   │   └── scratches
 │   │   ├── test
-│   │   │   ├── bad
+│   │   │   ├── hole
 │   │   │   └── good
+│   │   │   └── scratches
 │   │   └── train
 │   │       └── good
 │   ├── ...
@@ -68,16 +70,14 @@ data_dir/
 ├── Kvasir
 │   ├── images
 │   └── masks
-├── mvtec
-│   ├── bottle
-│   │   ├── ground_truth
-│   │   │   ├── broken_large
-│   │   │   ├── broken_small
-│   │   │   └── contamination
+├── mvtec_3d  
+│   ├── bagel
+│   │   ├── calibration
 │   │   ├── test
-│   │   │   ├── broken_large
-│   │   │   ├── broken_small
+│   │   │   ├── combined
 │   │   │   ├── contamination
+│   │   │   ├── crack
+│   │   │   ├── hole
 │   │   │   └── good
 │   │   └── train
 │   │       └── good
