@@ -1,4 +1,4 @@
-# LOGIC-AD (PyTorch)
+# LOGIC-AD
 
 PyTorch implementation of **LOGIC-AD: Cross-Domain Zero-Shot Anomaly Detection via Logit-Space Consistency**.
 
