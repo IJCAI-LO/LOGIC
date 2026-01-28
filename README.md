@@ -1,47 +1,57 @@
-# Pytorch implementation of Logic-AD
+# LOGIC-AD (PyTorch)
 
-Pytorch implementation of Paper "LOGIC-AD: Cross-Domain Zero-Shot Anomaly Detection via Logit-Space
-Consistency"
-
-![](./pic/model.png)
+PyTorch implementation of **LOGIC-AD: Cross-Domain Zero-Shot Anomaly Detection via Logit-Space Consistency**.
 
 <p align="center">
-    <img src="model.png" alt="study" width="70%">
-    <br>
-    <em>One-shot anomaly segmentation results.</em>
+  <img src="./pic/model.png" alt="LOGIC-AD Framework" width="70%">
+  <br>
+  <em>Overview of LOGIC-AD. One-shot anomaly segmentation results are shown for cross-domain evaluation.</em>
 </p>
-please check you dataset dir is like below:
-```
+
+---
+
+## 📌 Overview
+
+LOGIC-AD is a **cross-domain zero-shot anomaly detection** framework that enforces **logit-space consistency** to improve generalization across unseen domains.  
+This repository provides a complete PyTorch training and evaluation pipeline for reproducing the results in the paper.
+
+---
+
+## 📂 Dataset Preparation
+
+Please organize your dataset directory as follows. Ensure the folder structure strictly matches the layout below:
+
+```text
+data_dir/
 ├── Br35H
-├── Br35H
-│   ├── no
-│   └── yes
+│   ├── no
+│   └── yes
 ├── BrainMRI
-│   ├── no
-│   └── yes
+│   ├── no
+│   └── yes
 ├── btad
-│   ├── 01
-│   │   ├── ground_truth
-│   │   │   └── ko
-│   │   ├── test
-│   │   │   ├── ko
-│   │   │   └── ok
-│   │   └── train
-│   │       └── ok
-│   ├── ...
+│   ├── 01
+│   │   ├── ground_truth
+│   │   │   └── ko
+│   │   ├── test
+│   │   │   ├── ko
+│   │   │   └── ok
+│   │   └── train
+│   │       └── ok
+│   ├── ...
 ├── CVC-ClinicDB
-│   ├── images
-│   └── masks
+│   ├── images
+│   └── masks
 ├── CVC-ColonDB
-│   ├── images
-│   └── masks
+│   ├── images
+│   └── masks
 ├── DAGM_KaggleUpload
-│   ├── Class1
-│   │   ├── Test
-│   │   │   └── Label
-│   │   └── Train
-│   │       └── Label
-│   ├── ...
+│   ├── Class1
+│   │   ├── Test
+│   │   │   └── Label
+│   │   └── Train
+│   │       └── Label
+│   ├── ...
 ├── DTD-Synthetic
 │   ├── Blotchy_099
 │   │   ├── ground_truth
@@ -53,8 +63,8 @@ please check you dataset dir is like below:
 │   │       └── good
 │   ├── ...
 ├── ISIC2016
-│   ├── ISBI2016_ISIC_Part1_Test_Data
-│   └── ISBI2016_ISIC_Part1_Test_GroundTruth
+│   ├── ISBI2016_ISIC_Part1_Test_Data
+│   └── ISBI2016_ISIC_Part1_Test_GroundTruth
 ├── Kvasir
 │   ├── images
 │   └── masks
@@ -81,18 +91,4 @@ please check you dataset dir is like below:
 │   │       └── Masks
 │   │           └── Anomaly
 │   ├── ...
-│   ├── split_csv
-```
-
-Then change the data path `data_dir` in  `train.sh` or `test.sh` to train or test.
-
-To train the zero-shot model, you can run
-```
-sh ./train.sh
-```
-
-
-To test model, you can run
-```
-sh ./test.sh
-```
+│   └── split_csv
