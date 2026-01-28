@@ -5,7 +5,7 @@ PyTorch implementation of **LOGIC-AD: Cross-Domain Zero-Shot Anomaly Detection v
 <p align="center">
   <img src="./pic/model.png" alt="LOGIC-AD Framework" width="70%">
   <br>
-  <em>Overview of LOGIC-AD. One-shot anomaly segmentation results are shown for cross-domain evaluation.</em>
+  <em>Overview of LOGIC-AD. zero-shot anomaly segmentation results are shown for cross-domain evaluation.</em>
 </p>
 
 ---
